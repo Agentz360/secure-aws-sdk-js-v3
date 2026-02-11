@@ -1,8 +1,10 @@
 const _A = "Arn";
-const _AA = "AliasArn";
+const _AA = "AutoAccept";
 const _AAC = "AttributeAndCondition";
 const _AACHGI = "AllowedAccessControlHierarchyGroupId";
 const _AACT = "AllowedAccessControlTags";
+const _AACu = "AutoAcceptConfig";
+const _AACut = "AutoAcceptConfigs";
 const _AADS = "AssociateAnalyticsDataSet";
 const _AADSR = "AssociateAnalyticsDataSetRequest";
 const _AADSRs = "AssociateAnalyticsDataSetResponse";
@@ -14,7 +16,7 @@ const _AAOR = "AssociateApprovedOriginRequest";
 const _AAT = "AgentAvailabilityTimer";
 const _AAVI = "AiAgentVersionId";
 const _AAi = "AiAgents";
-const _AAu = "AutoAccept";
+const _AAl = "AliasArn";
 const _AB = "AcknowledgedBy";
 const _ABAT = "AcceptedByAgentTimestamp";
 const _ABR = "AssociateBotRequest";
@@ -29,6 +31,9 @@ const _ACRL = "AgentContactReferenceList";
 const _ACS = "AgentContactState";
 const _ACSL = "AssociatedContactSummaryList";
 const _ACSs = "AssociatedContactSummary";
+const _ACWC = "AfterContactWorkConfig";
+const _ACWCPC = "AfterContactWorkConfigPerChannel";
+const _ACWCf = "AfterContactWorkConfigs";
 const _ACWD = "AfterContactWorkDuration";
 const _ACWET = "AfterContactWorkEndTimestamp";
 const _ACWST = "AfterContactWorkStartTimestamp";
@@ -75,6 +80,8 @@ const _AEn = "AndExpression";
 const _AEu = "AutoEvaluation";
 const _AF = "AgentFirst";
 const _AFC = "AutomaticFailConfiguration";
+const _AFCAA = "AgentFirstCallbackAutoAccept";
+const _AFCACWC = "AgentFirstCallbackAfterContactWorkConfig";
 const _AFE = "AttachedFileError";
 const _AFEL = "AttachedFileErrorsList";
 const _AFIRER = "AttachedFileInvalidRequestExceptionReason";
@@ -329,7 +336,7 @@ const _CDTARr = "CreateDataTableAttributeResponse";
 const _CDTR = "CreateDataTableRequest";
 const _CDTRr = "CreateDataTableResponse";
 const _CDo = "ContactDetails";
-const _CE = "ChatEvent";
+const _CE = "ConflictException";
 const _CEA = "CcEmailAddresses";
 const _CEAR = "CreateEmailAddressRequest";
 const _CEARr = "CreateEmailAddressResponse";
@@ -337,9 +344,9 @@ const _CEAr = "CreateEmailAddress";
 const _CEF = "CreateEvaluationForm";
 const _CEFR = "CreateEvaluationFormRequest";
 const _CEFRr = "CreateEvaluationFormResponse";
-const _CEo = "ConflictException";
-const _CEon = "ContactEvaluations";
-const _CEont = "ContactEvaluation";
+const _CEh = "ChatEvent";
+const _CEo = "ContactEvaluations";
+const _CEon = "ContactEvaluation";
 const _CEu = "CustomerEndpoint";
 const _CF = "ContactFilter";
 const _CFA = "ContactFlowArn";
@@ -1656,7 +1663,7 @@ const _Ope = "Operator";
 const _Opt = "Options";
 const _Or = "Origins";
 const _Ord = "Order";
-const _P = "Password";
+const _P = "Problems";
 const _PA = "PredefinedAttribute";
 const _PAA = "PinpointAppArn";
 const _PAACC = "PrimaryAttributeAccessControlConfiguration";
@@ -1679,6 +1686,8 @@ const _PAr = "PredefinedAttributes";
 const _PAro = "ProcessorArn";
 const _PB = "PageBackground";
 const _PC = "ParticipantCredentials";
+const _PCC = "PersistentConnectionConfigs";
+const _PCCe = "PersistentConnectionConfig";
 const _PCI = "PreviousContactId";
 const _PCR = "PauseContactRequest";
 const _PCRa = "PauseContactResponse";
@@ -1705,14 +1714,16 @@ const _PHOOI = "ParentHoursOfOperationIds";
 const _PHOOL = "ParentHoursOfOperationsList";
 const _PI = "ParticipantId";
 const _PIr = "PromptId";
-const _PL = "ProficiencyLevel";
-const _PLr = "PropertyList";
+const _PL = "PropertyList";
+const _PLr = "ProficiencyLevel";
 const _PLro = "PromptList";
 const _PM = "ParticipantMetrics";
 const _PN = "PhoneNumber";
 const _PNA = "PhoneNumberArn";
+const _PNC = "PhoneNumberConfigs";
 const _PNCC = "PhoneNumberCountryCode";
 const _PNCCh = "PhoneNumberCountryCodes";
+const _PNCh = "PhoneNumberConfig";
 const _PND = "PhoneNumberDescription";
 const _PNI = "PhoneNumberId";
 const _PNP = "PhoneNumberPrefix";
@@ -1760,7 +1771,8 @@ const _PVS = "PrimaryValuesSet";
 const _PVl = "PlatformVersion";
 const _PVr = "PrimaryValue";
 const _PVro = "PropertyValue";
-const _Pa = "Page";
+const _Pa = "Password";
+const _Pag = "Page";
 const _Pal = "Palette";
 const _Pe = "Permissions";
 const _Per = "Percentage";
@@ -1769,7 +1781,6 @@ const _Pre = "Prefix";
 const _Pri = "Primary";
 const _Prio = "Priority";
 const _Pro = "Prompt";
-const _Prob = "Problems";
 const _Prom = "Prompts";
 const _Pu = "Purposes";
 const _Q = "Queue";
@@ -1817,7 +1828,7 @@ const _QTu = "QueueTypes";
 const _QTue = "QueueType";
 const _Qu = "Queues";
 const _Que = "Question";
-const _R = "Range";
+const _R = "Reason";
 const _RA = "ResourceArns";
 const _RAe = "ResourceArn";
 const _RAep = "ReplicaAlias";
@@ -1943,8 +1954,8 @@ const _RTe = "RehydrationType";
 const _RTef = "RefreshToken";
 const _RTefe = "ReferenceTypes";
 const _RTes = "ResourceTypes";
+const _Ra = "Range";
 const _Re = "Recordings";
-const _Rea = "Reason";
 const _Rec = "Record";
 const _Reci = "Recipient";
 const _Red = "Redaction";
@@ -2119,8 +2130,9 @@ const _SPAe = "SearchPredefinedAttributes";
 const _SPI = "SecurityProfileId";
 const _SPIe = "SecurityProfileIds";
 const _SPIec = "SecurityProfileItem";
-const _SPN = "SecurityProfileName";
+const _SPN = "SensitivePhoneNumber";
 const _SPNA = "SourcePhoneNumberArn";
+const _SPNe = "SecurityProfileName";
 const _SPNo = "SourcePhoneNumber";
 const _SPR = "SearchPromptsRequest";
 const _SPRe = "SearchPromptsResponse";
@@ -2535,6 +2547,8 @@ const _UTL = "UnprocessedTranscriptLocation";
 const _UTT = "UpdateTaskTemplate";
 const _UTTR = "UpdateTaskTemplateRequest";
 const _UTTRp = "UpdateTaskTemplateResponse";
+const _UUC = "UpdateUserConfig";
+const _UUCR = "UpdateUserConfigRequest";
 const _UUH = "UpdateUserHierarchy";
 const _UUHGN = "UpdateUserHierarchyGroupName";
 const _UUHGNR = "UpdateUserHierarchyGroupNameRequest";
@@ -2584,6 +2598,9 @@ const _VCEPP = "VoiceCallEntryPointParameters";
 const _VCS = "ViewContentSha256";
 const _VD = "VersionDescription";
 const _VE = "ValidationEnum";
+const _VEC = "VoiceEnhancementConfigs";
+const _VECo = "VoiceEnhancementConfig";
+const _VEM = "VoiceEnhancementMode";
 const _VI = "VocabularyId";
 const _VIC = "ViewInputContent";
 const _VIS = "ViewInputSchema";
@@ -2684,12 +2701,12 @@ const _qT = "queueTypes";
 const _rA = "resourceArn";
 const _rT = "resourceType";
 const _rTe = "referenceTypes";
-const _s = "status";
+const _s = "smithy.ts.sdk.synthetic.com.amazonaws.connect";
 const _sT = "startTime";
 const _sV = "snapshotVersion";
 const _se = "server";
-const _sm = "smithy.ts.sdk.synthetic.com.amazonaws.connect";
-const _st = "state";
+const _st = "status";
+const _sta = "state";
 const _t = "tags";
 const _tCI = "testCaseId";
 const _tCN = "testCaseName";
@@ -2753,6 +2770,187 @@ import {
 } from "../models/errors";
 
 /* eslint no-var: 0 */
+const _s_registry = TypeRegistry.for(_s);
+export var ConnectServiceException$: StaticErrorSchema = [-3, _s, "ConnectServiceException", 0, [], []];
+_s_registry.registerError(ConnectServiceException$, ConnectServiceException);
+const n0_registry = TypeRegistry.for(n0);
+export var AccessDeniedException$: StaticErrorSchema = [-3, n0, _ADE,
+  { [_aQE]: [`AccessDeniedException`, 403], [_e]: _c, [_hE]: 403 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(AccessDeniedException$, AccessDeniedException);
+export var ConditionalOperationFailedException$: StaticErrorSchema = [-3, n0, _COFE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ConditionalOperationFailedException$, ConditionalOperationFailedException);
+export var ConflictException$: StaticErrorSchema = [-3, n0, _CE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ConflictException$, ConflictException);
+export var ContactFlowNotPublishedException$: StaticErrorSchema = [-3, n0, _CFNPE,
+  { [_e]: _c, [_hE]: 404 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ContactFlowNotPublishedException$, ContactFlowNotPublishedException);
+export var ContactNotFoundException$: StaticErrorSchema = [-3, n0, _CNFE,
+  { [_aQE]: [`ContactNotFoundException`, 410], [_e]: _c, [_hE]: 410 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ContactNotFoundException$, ContactNotFoundException);
+export var DestinationNotAllowedException$: StaticErrorSchema = [-3, n0, _DNAE,
+  { [_aQE]: [`DestinationNotAllowedException`, 403], [_e]: _c, [_hE]: 403 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(DestinationNotAllowedException$, DestinationNotAllowedException);
+export var DuplicateResourceException$: StaticErrorSchema = [-3, n0, _DRE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(DuplicateResourceException$, DuplicateResourceException);
+export var IdempotencyException$: StaticErrorSchema = [-3, n0, _IE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(IdempotencyException$, IdempotencyException);
+export var InternalServiceException$: StaticErrorSchema = [-3, n0, _ISE,
+  { [_e]: _se, [_hE]: 500 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(InternalServiceException$, InternalServiceException);
+export var InvalidActiveRegionException$: StaticErrorSchema = [-3, n0, _IARE,
+  { [_e]: _c, [_hE]: 400 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(InvalidActiveRegionException$, InvalidActiveRegionException);
+export var InvalidContactFlowException$: StaticErrorSchema = [-3, n0, _ICFE,
+  { [_e]: _c, [_hE]: 400 },
+  [_p],
+  [() => Problems]
+];
+n0_registry.registerError(InvalidContactFlowException$, InvalidContactFlowException);
+export var InvalidContactFlowModuleException$: StaticErrorSchema = [-3, n0, _ICFME,
+  { [_e]: _c, [_hE]: 400 },
+  [_P],
+  [() => Problems]
+];
+n0_registry.registerError(InvalidContactFlowModuleException$, InvalidContactFlowModuleException);
+export var InvalidParameterException$: StaticErrorSchema = [-3, n0, _IPE,
+  { [_e]: _c, [_hE]: 400 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(InvalidParameterException$, InvalidParameterException);
+export var InvalidRequestException$: StaticErrorSchema = [-3, n0, _IRE,
+  { [_e]: _c, [_hE]: 400 },
+  [_M, _R],
+  [0, () => InvalidRequestExceptionReason$]
+];
+n0_registry.registerError(InvalidRequestException$, InvalidRequestException);
+export var InvalidTestCaseException$: StaticErrorSchema = [-3, n0, _ITCE,
+  { [_e]: _c, [_hE]: 400 },
+  [_P],
+  [() => Problems]
+];
+n0_registry.registerError(InvalidTestCaseException$, InvalidTestCaseException);
+export var LimitExceededException$: StaticErrorSchema = [-3, n0, _LEE,
+  { [_aQE]: [`LimitExceededException`, 429], [_e]: _c, [_hE]: 429 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(LimitExceededException$, LimitExceededException);
+export var MaximumResultReturnedException$: StaticErrorSchema = [-3, n0, _MRRE,
+  { [_e]: _c, [_hE]: 400 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(MaximumResultReturnedException$, MaximumResultReturnedException);
+export var OutboundContactNotPermittedException$: StaticErrorSchema = [-3, n0, _OCNPE,
+  { [_aQE]: [`OutboundContactNotPermittedException`, 403], [_e]: _c, [_hE]: 403 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(OutboundContactNotPermittedException$, OutboundContactNotPermittedException);
+export var OutputTypeNotFoundException$: StaticErrorSchema = [-3, n0, _OTNFE,
+  { [_e]: _c, [_hE]: 404 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(OutputTypeNotFoundException$, OutputTypeNotFoundException);
+export var PropertyValidationException$: StaticErrorSchema = [-3, n0, _PVE,
+  { [_e]: _c, [_hE]: 400 },
+  [_M, _PL],
+  [0, () => PropertyValidationExceptionPropertyList], 1
+];
+n0_registry.registerError(PropertyValidationException$, PropertyValidationException);
+export var ResourceConflictException$: StaticErrorSchema = [-3, n0, _RCE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ResourceConflictException$, ResourceConflictException);
+export var ResourceInUseException$: StaticErrorSchema = [-3, n0, _RIUE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M, _RT, _RI],
+  [0, 0, 0]
+];
+n0_registry.registerError(ResourceInUseException$, ResourceInUseException);
+export var ResourceNotFoundException$: StaticErrorSchema = [-3, n0, _RNFE,
+  { [_e]: _c, [_hE]: 404 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ResourceNotFoundException$, ResourceNotFoundException);
+export var ResourceNotReadyException$: StaticErrorSchema = [-3, n0, _RNRE,
+  { [_e]: _c, [_hE]: 409 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ResourceNotReadyException$, ResourceNotReadyException);
+export var ServiceQuotaExceededException$: StaticErrorSchema = [-3, n0, _SQEE,
+  { [_e]: _c, [_hE]: 402 },
+  [_M, _R],
+  [0, () => ServiceQuotaExceededExceptionReason$]
+];
+n0_registry.registerError(ServiceQuotaExceededException$, ServiceQuotaExceededException);
+export var ThrottlingException$: StaticErrorSchema = [-3, n0, _TE,
+  { [_aQE]: [`ThrottlingException`, 429], [_e]: _c, [_hE]: 429 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(ThrottlingException$, ThrottlingException);
+export var TooManyRequestsException$: StaticErrorSchema = [-3, n0, _TMRE,
+  { [_e]: _c, [_hE]: 429 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(TooManyRequestsException$, TooManyRequestsException);
+export var UserNotFoundException$: StaticErrorSchema = [-3, n0, _UNFE,
+  { [_e]: _c, [_hE]: 404 },
+  [_M],
+  [0]
+];
+n0_registry.registerError(UserNotFoundException$, UserNotFoundException);
+/**
+ * TypeRegistry instances containing modeled errors.
+ * @internal
+ *
+ */
+export const errorTypeRegistries = [
+  _s_registry,
+  n0_registry,
+]
 var AgentFirstName: StaticSimpleSchema = [0, n0, _AFN, 8, 0];
 var AgentLastName: StaticSimpleSchema = [0, n0, _ALN, 8, 0];
 var AuthenticationError: StaticSimpleSchema = [0, n0, _AE, 8, 0];
@@ -2769,22 +2967,17 @@ var InboundSubject: StaticSimpleSchema = [0, n0, _IS, 8, 0];
 var JoinToken: StaticSimpleSchema = [0, n0, _JT, 8, 0];
 var Name: StaticSimpleSchema = [0, n0, _N, 8, 0];
 var OutboundSubject: StaticSimpleSchema = [0, n0, _OS, 8, 0];
-var Password: StaticSimpleSchema = [0, n0, _P, 8, 0];
+var Password: StaticSimpleSchema = [0, n0, _Pa, 8, 0];
 var SearchableContactAttributeKey: StaticSimpleSchema = [0, n0, _SCAK, 8, 0];
 var SearchableContactAttributeValue: StaticSimpleSchema = [0, n0, _SCAV, 8, 0];
 var SearchableSegmentAttributeKey: StaticSimpleSchema = [0, n0, _SSAK, 8, 0];
 var SearchableSegmentAttributeValue: StaticSimpleSchema = [0, n0, _SSAV, 8, 0];
 var SearchText: StaticSimpleSchema = [0, n0, _ST, 8, 0];
 var SecurityToken: StaticSimpleSchema = [0, n0, _STe, 8, 0];
+var SensitivePhoneNumber: StaticSimpleSchema = [0, n0, _SPN, 8, 0];
 var ViewAction: StaticSimpleSchema = [0, n0, _VA, 8, 0];
 var ViewInputSchema: StaticSimpleSchema = [0, n0, _VIS, 8, 0];
 var ViewName: StaticSimpleSchema = [0, n0, _VN, 8, 0];
-export var AccessDeniedException$: StaticErrorSchema = [-3, n0, _ADE,
-  { [_aQE]: [`AccessDeniedException`, 403], [_e]: _c, [_hE]: 403 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(AccessDeniedException$, AccessDeniedException);
 export var ActionSummary$: StaticStructureSchema = [3, n0, _AS,
   0,
   [_AT],
@@ -2804,6 +2997,16 @@ export var AdditionalEmailRecipients$: StaticStructureSchema = [3, n0, _AER,
   0,
   [_TL, _CL],
   [() => EmailRecipientsList, () => EmailRecipientsList]
+];
+export var AfterContactWorkConfig$: StaticStructureSchema = [3, n0, _ACWC,
+  0,
+  [_ACWTL],
+  [1]
+];
+export var AfterContactWorkConfigPerChannel$: StaticStructureSchema = [3, n0, _ACWCPC,
+  0,
+  [_C, _ACWC, _AFCACWC],
+  [0, () => AfterContactWorkConfig$, () => AfterContactWorkConfig$], 2
 ];
 export var AgentConfig$: StaticStructureSchema = [3, n0, _ACg,
   0,
@@ -3097,7 +3300,7 @@ export var AttributeAndCondition$: StaticStructureSchema = [3, n0, _AAC,
 ];
 export var AttributeCondition$: StaticStructureSchema = [3, n0, _ACt,
   0,
-  [_N, _V, _PL, _R, _MC, _CO],
+  [_N, _V, _PLr, _Ra, _MC, _CO],
   [0, 0, 1, () => Range$, () => MatchCriteria$, 0]
 ];
 export var AudioFeatures$: StaticStructureSchema = [3, n0, _AFu,
@@ -3119,6 +3322,11 @@ export var AuthenticationProfileSummary$: StaticStructureSchema = [3, n0, _APS,
   0,
   [_I, _A, _N, _ID, _LMT, _LMR],
   [0, 0, 0, 2, 4, 0]
+];
+export var AutoAcceptConfig$: StaticStructureSchema = [3, n0, _AACu,
+  0,
+  [_C, _AA, _AFCAA],
+  [0, 2, 2], 2
 ];
 export var AutoEvaluationConfiguration$: StaticStructureSchema = [3, n0, _AEC,
   0,
@@ -3290,7 +3498,7 @@ export var ChatContactMetrics$: StaticStructureSchema = [3, n0, _CCM,
   [_MP, _TM, _TBM, _TBMLIC, _CCTIM, _CTC, _AFRT, _AFRTIM],
   [2, 1, 1, 1, 1, 1, 4, 1]
 ];
-export var ChatEvent$: StaticStructureSchema = [3, n0, _CE,
+export var ChatEvent$: StaticStructureSchema = [3, n0, _CEh,
   0,
   [_T, _CTon, _Co],
   [0, 0, 0], 1
@@ -3350,18 +3558,6 @@ export var Condition$: StaticStructureSchema = [3, n0, _Con,
   [_SC, _NC],
   [() => StringCondition$, () => NumberCondition$]
 ];
-export var ConditionalOperationFailedException$: StaticErrorSchema = [-3, n0, _COFE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ConditionalOperationFailedException$, ConditionalOperationFailedException);
-export var ConflictException$: StaticErrorSchema = [-3, n0, _CEo,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ConflictException$, ConflictException);
 export var ConnectionData$: StaticStructureSchema = [3, n0, _CD,
   0,
   [_At, _Me],
@@ -3369,7 +3565,7 @@ export var ConnectionData$: StaticStructureSchema = [3, n0, _CD,
 ];
 export var Contact$: StaticStructureSchema = [3, n0, _Cont,
   0,
-  [_A, _I, _ICI, _PCI, _CAI, _IM, _N, _D, _C, _QIu, _AI, _IT, _DT, _LUT, _LPT, _LRT, _RST, _TPC, _TPDIS, _STc, _RCI, _WIi, _CIu, _CEu, _SE, _QTAS, _QP, _Ta, _CTST, _RC, _Cu, _Cam, _AMDS, _CVA, _QM, _CMh, _DD, _AER, _SAe, _Re, _DR, _CEon, _TTI, _CDo, _OSu, _Attr, _NCe, _GRM],
+  [_A, _I, _ICI, _PCI, _CAI, _IM, _N, _D, _C, _QIu, _AI, _IT, _DT, _LUT, _LPT, _LRT, _RST, _TPC, _TPDIS, _STc, _RCI, _WIi, _CIu, _CEu, _SE, _QTAS, _QP, _Ta, _CTST, _RC, _Cu, _Cam, _AMDS, _CVA, _QM, _CMh, _DD, _AER, _SAe, _Re, _DR, _CEo, _TTI, _CDo, _OSu, _Attr, _NCe, _GRM],
   [0, 0, 0, 0, 0, 0, [() => Name, 0], [() => Description, 0], 0, () => QueueInfo$, () => AgentInfo$, 4, 4, 4, 4, 4, 4, 1, 1, 4, 0, () => WisdomInfo$, 0, () => EndpointInfo$, () => EndpointInfo$, 1, 1, 128 | 0, 4, () => RoutingCriteria$, () => Customer$, () => Campaign$, 0, () => CustomerVoiceActivity$, () => QualityMetrics$, () => ChatMetrics$, () => DisconnectDetails$, () => AdditionalEmailRecipients$, () => SegmentAttributes, () => Recordings, 0, () => ContactEvaluations, () => TaskTemplateInfoV2$, () => ContactDetails$, () => OutboundStrategy$, 128 | 0, () => NextContacts, () => GlobalResiliencyMetadata$]
 ];
 export var ContactAnalysis$: StaticStructureSchema = [3, n0, _CAo,
@@ -3392,7 +3588,7 @@ export var ContactDetails$: StaticStructureSchema = [3, n0, _CDo,
   [_N, _D],
   [0, 0]
 ];
-export var ContactEvaluation$: StaticStructureSchema = [3, n0, _CEont,
+export var ContactEvaluation$: StaticStructureSchema = [3, n0, _CEon,
   0,
   [_FIo, _EAv, _St, _STta, _ETn, _DTe, _EL],
   [0, 0, 0, 4, 4, 4, 0]
@@ -3452,12 +3648,6 @@ export var ContactFlowModuleVersionSummary$: StaticStructureSchema = [3, n0, _CF
   [_A, _VD, _Ve],
   [0, 0, 1]
 ];
-export var ContactFlowNotPublishedException$: StaticErrorSchema = [-3, n0, _CFNPE,
-  { [_e]: _c, [_hE]: 404 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ContactFlowNotPublishedException$, ContactFlowNotPublishedException);
 export var ContactFlowSearchCriteria$: StaticStructureSchema = [3, n0, _CFSC,
   0,
   [_OC, _ACn, _SC, _TCy, _SCta, _SCtat],
@@ -3493,12 +3683,6 @@ export var ContactMetricResult$: StaticStructureSchema = [3, n0, _CMR,
   [_N, _V],
   [0, () => ContactMetricValue$], 2
 ];
-export var ContactNotFoundException$: StaticErrorSchema = [-3, n0, _CNFE,
-  { [_aQE]: [`ContactNotFoundException`, 410], [_e]: _c, [_hE]: 410 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ContactNotFoundException$, ContactNotFoundException);
 export var ContactSearchSummary$: StaticStructureSchema = [3, n0, _CSS,
   0,
   [_A, _I, _ICI, _PCI, _IM, _C, _QIu, _AI, _IT, _DT, _STc, _SAe, _N, _RC, _Ta, _GRM],
@@ -3776,7 +3960,7 @@ export var CreateRuleResponse$: StaticStructureSchema = [3, n0, _CRRr,
 ];
 export var CreateSecurityProfileRequest$: StaticStructureSchema = [3, n0, _CSPR,
   0,
-  [_SPN, _II, _D, _Pe, _Ta, _AACT, _TRR, _App, _HRR, _AACHGI, _AFM, _GACC],
+  [_SPNe, _II, _D, _Pe, _Ta, _AACT, _TRR, _App, _HRR, _AACHGI, _AFM, _GACC],
   [0, [0, 1], 0, 64 | 0, 128 | 0, 128 | 0, 64 | 0, () => Applications, 64 | 0, 0, () => AllowedFlowModules, () => GranularAccessControlConfiguration$], 2
 ];
 export var CreateSecurityProfileResponse$: StaticStructureSchema = [3, n0, _CSPRr,
@@ -3836,8 +4020,8 @@ export var CreateUserHierarchyGroupResponse$: StaticStructureSchema = [3, n0, _C
 ];
 export var CreateUserRequest$: StaticStructureSchema = [3, n0, _CUR,
   0,
-  [_U, _PCh, _SPIe, _RPI, _II, _P, _IId, _DUI, _HGI, _Ta],
-  [0, () => UserPhoneConfig$, 64 | 0, 0, [0, 1], [() => Password, 0], [() => UserIdentityInfo$, 0], 0, 0, 128 | 0], 5
+  [_U, _SPIe, _RPI, _II, _Pa, _IId, _PCh, _DUI, _HGI, _AACut, _ACWCf, _PNC, _PCC, _VEC, _Ta],
+  [0, 64 | 0, 0, [0, 1], [() => Password, 0], [() => UserIdentityInfo$, 0], [() => UserPhoneConfig$, 0], 0, 0, () => AutoAcceptConfigs, () => AfterContactWorkConfigs, [() => PhoneNumberConfigs, 0], () => PersistentConnectionConfigs, () => VoiceEnhancementConfigs, 128 | 0], 4
 ];
 export var CreateUserResponse$: StaticStructureSchema = [3, n0, _CURr,
   0,
@@ -3876,7 +4060,7 @@ export var CreateVocabularyResponse$: StaticStructureSchema = [3, n0, _CVRrea,
 ];
 export var CreateWorkspacePageRequest$: StaticStructureSchema = [3, n0, _CWPR,
   0,
-  [_II, _WI, _RAe, _Pa, _Sl, _IDnp],
+  [_II, _WI, _RAe, _Pag, _Sl, _IDnp],
   [[0, 1], [0, 1], 0, 0, 0, 0], 4
 ];
 export var CreateWorkspacePageResponse$: StaticStructureSchema = [3, n0, _CWPRr,
@@ -4291,7 +4475,7 @@ export var DeleteWorkspaceMediaResponse$: StaticStructureSchema = [3, n0, _DWMRe
 ];
 export var DeleteWorkspacePageRequest$: StaticStructureSchema = [3, n0, _DWPR,
   0,
-  [_II, _WI, _Pa],
+  [_II, _WI, _Pag],
   [[0, 1], [0, 1], [0, 1]], 3
 ];
 export var DeleteWorkspacePageResponse$: StaticStructureSchema = [3, n0, _DWPRe,
@@ -4552,7 +4736,7 @@ export var DescribeSecurityProfileResponse$: StaticStructureSchema = [3, n0, _DS
 export var DescribeTestCaseRequest$: StaticStructureSchema = [3, n0, _DTCRes,
   0,
   [_II, _TCI, _St],
-  [[0, 1], [0, 1], [0, { [_hQ]: _s }]], 2
+  [[0, 1], [0, 1], [0, { [_hQ]: _st }]], 2
 ];
 export var DescribeTestCaseResponse$: StaticStructureSchema = [3, n0, _DTCResc,
   0,
@@ -4629,12 +4813,6 @@ export var DescribeWorkspaceResponse$: StaticStructureSchema = [3, n0, _DWResc,
   [_W],
   [() => Workspace$], 1
 ];
-export var DestinationNotAllowedException$: StaticErrorSchema = [-3, n0, _DNAE,
-  { [_aQE]: [`DestinationNotAllowedException`, 403], [_e]: _c, [_hE]: 403 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(DestinationNotAllowedException$, DestinationNotAllowedException);
 export var DeviceInfo$: StaticStructureSchema = [3, n0, _DI,
   0,
   [_PNl, _PVl, _OSp],
@@ -4780,12 +4958,6 @@ export var DownloadUrlMetadata$: StaticStructureSchema = [3, n0, _DUM,
   [_Ur, _UE],
   [0, 0]
 ];
-export var DuplicateResourceException$: StaticErrorSchema = [-3, n0, _DRE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(DuplicateResourceException$, DuplicateResourceException);
 export var EffectiveHoursOfOperations$: StaticStructureSchema = [3, n0, _EHOO,
   0,
   [_Da, _OH],
@@ -5501,12 +5673,6 @@ export var HoursOfOperationTimeSlice$: StaticStructureSchema = [3, n0, _HOOTS,
   [_H, _Mi],
   [1, 1], 2
 ];
-export var IdempotencyException$: StaticErrorSchema = [-3, n0, _IE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(IdempotencyException$, IdempotencyException);
 export var ImagesLogo$: StaticStructureSchema = [3, n0, _IL,
   0,
   [_Defa, _Fa],
@@ -5577,53 +5743,11 @@ export var IntegrationAssociationSummary$: StaticStructureSchema = [3, n0, _IAS,
   [_IAI, _IAA, _II, _ITn, _IAnt, _SAU, _SAN, _STo],
   [0, 0, 0, 0, 0, 0, 0, 0]
 ];
-export var InternalServiceException$: StaticErrorSchema = [-3, n0, _ISE,
-  { [_e]: _se, [_hE]: 500 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(InternalServiceException$, InternalServiceException);
 export var IntervalDetails$: StaticStructureSchema = [3, n0, _IDnt,
   0,
   [_TZ, _IP],
   [0, 0]
 ];
-export var InvalidActiveRegionException$: StaticErrorSchema = [-3, n0, _IARE,
-  { [_e]: _c, [_hE]: 400 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(InvalidActiveRegionException$, InvalidActiveRegionException);
-export var InvalidContactFlowException$: StaticErrorSchema = [-3, n0, _ICFE,
-  { [_e]: _c, [_hE]: 400 },
-  [_p],
-  [() => Problems]
-];
-TypeRegistry.for(n0).registerError(InvalidContactFlowException$, InvalidContactFlowException);
-export var InvalidContactFlowModuleException$: StaticErrorSchema = [-3, n0, _ICFME,
-  { [_e]: _c, [_hE]: 400 },
-  [_Prob],
-  [() => Problems]
-];
-TypeRegistry.for(n0).registerError(InvalidContactFlowModuleException$, InvalidContactFlowModuleException);
-export var InvalidParameterException$: StaticErrorSchema = [-3, n0, _IPE,
-  { [_e]: _c, [_hE]: 400 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(InvalidParameterException$, InvalidParameterException);
-export var InvalidRequestException$: StaticErrorSchema = [-3, n0, _IRE,
-  { [_e]: _c, [_hE]: 400 },
-  [_M, _Rea],
-  [0, () => InvalidRequestExceptionReason$]
-];
-TypeRegistry.for(n0).registerError(InvalidRequestException$, InvalidRequestException);
-export var InvalidTestCaseException$: StaticErrorSchema = [-3, n0, _ITCE,
-  { [_e]: _c, [_hE]: 400 },
-  [_Prob],
-  [() => Problems]
-];
-TypeRegistry.for(n0).registerError(InvalidTestCaseException$, InvalidTestCaseException);
 export var InvisibleFieldInfo$: StaticStructureSchema = [3, n0, _IFI,
   0,
   [_I],
@@ -5656,15 +5780,9 @@ export var LexBotConfig$: StaticStructureSchema = [3, n0, _LBC,
 ];
 export var LexV2Bot$: StaticStructureSchema = [3, n0, _LVB,
   0,
-  [_AA],
+  [_AAl],
   [0]
 ];
-export var LimitExceededException$: StaticErrorSchema = [-3, n0, _LEE,
-  { [_aQE]: [`LimitExceededException`, 429], [_e]: _c, [_hE]: 429 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(LimitExceededException$, LimitExceededException);
 export var ListAgentStatusRequest$: StaticStructureSchema = [3, n0, _LASR,
   0,
   [_II, _NT, _MR, _AST],
@@ -5773,7 +5891,7 @@ export var ListContactFlowModuleAliasesResponse$: StaticStructureSchema = [3, n0
 export var ListContactFlowModulesRequest$: StaticStructureSchema = [3, n0, _LCFMR,
   0,
   [_II, _NT, _MR, _CFMSo],
-  [[0, 1], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }], [0, { [_hQ]: _st }]], 1
+  [[0, 1], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }], [0, { [_hQ]: _sta }]], 1
 ];
 export var ListContactFlowModulesResponse$: StaticStructureSchema = [3, n0, _LCFMRi,
   0,
@@ -6178,7 +6296,7 @@ export var ListTagsForResourceResponse$: StaticStructureSchema = [3, n0, _LTFRRi
 export var ListTaskTemplatesRequest$: StaticStructureSchema = [3, n0, _LTTR,
   0,
   [_II, _NT, _MR, _St, _N],
-  [[0, 1], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }], [0, { [_hQ]: _s }], [0, { [_hQ]: _n }]], 1
+  [[0, 1], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }], [0, { [_hQ]: _st }], [0, { [_hQ]: _n }]], 1
 ];
 export var ListTaskTemplatesResponse$: StaticStructureSchema = [3, n0, _LTTRi,
   0,
@@ -6188,7 +6306,7 @@ export var ListTaskTemplatesResponse$: StaticStructureSchema = [3, n0, _LTTRi,
 export var ListTestCaseExecutionRecordsRequest$: StaticStructureSchema = [3, n0, _LTCERR,
   0,
   [_II, _TCI, _TCEI, _St, _NT, _MR],
-  [[0, 1], [0, 1], [0, 1], [0, { [_hQ]: _s }], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }]], 3
+  [[0, 1], [0, 1], [0, 1], [0, { [_hQ]: _st }], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }]], 3
 ];
 export var ListTestCaseExecutionRecordsResponse$: StaticStructureSchema = [3, n0, _LTCERRi,
   0,
@@ -6198,7 +6316,7 @@ export var ListTestCaseExecutionRecordsResponse$: StaticStructureSchema = [3, n0
 export var ListTestCaseExecutionsRequest$: StaticStructureSchema = [3, n0, _LTCER,
   0,
   [_II, _TCI, _TCN, _STtar, _ETnd, _St, _NT, _MR],
-  [[0, 1], [0, { [_hQ]: _tCI }], [0, { [_hQ]: _tCN }], [4, { [_hQ]: _sT }], [4, { [_hQ]: _eT }], [0, { [_hQ]: _s }], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }]], 1
+  [[0, 1], [0, { [_hQ]: _tCI }], [0, { [_hQ]: _tCN }], [4, { [_hQ]: _sT }], [4, { [_hQ]: _eT }], [0, { [_hQ]: _st }], [0, { [_hQ]: _nT }], [1, { [_hQ]: _mR }]], 1
 ];
 export var ListTestCaseExecutionsResponse$: StaticStructureSchema = [3, n0, _LTCERi,
   0,
@@ -6330,12 +6448,6 @@ export var MatchCriteria$: StaticStructureSchema = [3, n0, _MC,
   [_ACge],
   [() => AgentsCriteria$]
 ];
-export var MaximumResultReturnedException$: StaticErrorSchema = [-3, n0, _MRRE,
-  { [_e]: _c, [_hE]: 400 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(MaximumResultReturnedException$, MaximumResultReturnedException);
 export var MediaConcurrency$: StaticStructureSchema = [3, n0, _MCed,
   0,
   [_C, _Conc, _CCB],
@@ -6456,12 +6568,6 @@ export var OutboundCallerConfig$: StaticStructureSchema = [3, n0, _OCC,
   [_OCIN, _OCINI, _OFI],
   [0, 0, 0]
 ];
-export var OutboundContactNotPermittedException$: StaticErrorSchema = [-3, n0, _OCNPE,
-  { [_aQE]: [`OutboundContactNotPermittedException`, 403], [_e]: _c, [_hE]: 403 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(OutboundContactNotPermittedException$, OutboundContactNotPermittedException);
 export var OutboundEmailConfig$: StaticStructureSchema = [3, n0, _OEC,
   0,
   [_OEAI],
@@ -6487,12 +6593,6 @@ export var OutboundStrategyConfig$: StaticStructureSchema = [3, n0, _OSC,
   [_AF],
   [() => AgentFirst$]
 ];
-export var OutputTypeNotFoundException$: StaticErrorSchema = [-3, n0, _OTNFE,
-  { [_e]: _c, [_hE]: 404 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(OutputTypeNotFoundException$, OutputTypeNotFoundException);
 export var OverrideHour$: StaticStructureSchema = [3, n0, _OHve,
   0,
   [_Star, _End_, _ON, _OSpe],
@@ -6577,6 +6677,16 @@ export var PersistentChat$: StaticStructureSchema = [3, n0, _PCe,
   0,
   [_RTe, _SCI],
   [0, 0]
+];
+export var PersistentConnectionConfig$: StaticStructureSchema = [3, n0, _PCCe,
+  0,
+  [_C, _PCer],
+  [0, 2], 2
+];
+export var PhoneNumberConfig$: StaticStructureSchema = [3, n0, _PNCh,
+  0,
+  [_C, _PTh, _PN],
+  [0, 0, [() => SensitivePhoneNumber, 0]], 2
 ];
 export var PhoneNumberQuickConnectConfig$: StaticStructureSchema = [3, n0, _PNQCC,
   0,
@@ -6673,15 +6783,9 @@ export var PromptSummary$: StaticStructureSchema = [3, n0, _PSr,
   [_I, _A, _N, _LMT, _LMR],
   [0, 0, 0, 4, 0]
 ];
-export var PropertyValidationException$: StaticErrorSchema = [-3, n0, _PVE,
-  { [_e]: _c, [_hE]: 400 },
-  [_M, _PLr],
-  [0, () => PropertyValidationExceptionPropertyList], 1
-];
-TypeRegistry.for(n0).registerError(PropertyValidationException$, PropertyValidationException);
 export var PropertyValidationExceptionProperty$: StaticStructureSchema = [3, n0, _PVEP,
   0,
-  [_PPr, _Rea, _M],
+  [_PPr, _R, _M],
   [0, 0, 0], 3
 ];
 export var PutUserStatusRequest$: StaticStructureSchema = [3, n0, _PUSR,
@@ -6769,7 +6873,7 @@ export var QuickConnectSummary$: StaticStructureSchema = [3, n0, _QCS,
   [_I, _A, _N, _QCTu, _LMT, _LMR],
   [0, 0, 0, 0, 4, 0]
 ];
-export var Range$: StaticStructureSchema = [3, n0, _R,
+export var Range$: StaticStructureSchema = [3, n0, _Ra,
   0,
   [_MPL, _MPLa],
   [1, 1]
@@ -6904,30 +7008,6 @@ export var RequiredFieldInfo$: StaticStructureSchema = [3, n0, _RFI,
   [_I],
   [() => TaskTemplateFieldIdentifier$]
 ];
-export var ResourceConflictException$: StaticErrorSchema = [-3, n0, _RCE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ResourceConflictException$, ResourceConflictException);
-export var ResourceInUseException$: StaticErrorSchema = [-3, n0, _RIUE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M, _RT, _RI],
-  [0, 0, 0]
-];
-TypeRegistry.for(n0).registerError(ResourceInUseException$, ResourceInUseException);
-export var ResourceNotFoundException$: StaticErrorSchema = [-3, n0, _RNFE,
-  { [_e]: _c, [_hE]: 404 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ResourceNotFoundException$, ResourceNotFoundException);
-export var ResourceNotReadyException$: StaticErrorSchema = [-3, n0, _RNRE,
-  { [_e]: _c, [_hE]: 409 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ResourceNotReadyException$, ResourceNotReadyException);
 export var ResourceTagsSearchCriteria$: StaticStructureSchema = [3, n0, _RTSC,
   0,
   [_TSC],
@@ -7365,7 +7445,7 @@ export var SecurityKey$: StaticStructureSchema = [3, n0, _SKe,
 ];
 export var SecurityProfile$: StaticStructureSchema = [3, n0, _SPe,
   0,
-  [_I, _ORIr, _A, _SPN, _D, _Ta, _AACT, _TRR, _LMT, _LMR, _HRR, _AACHGI, _GACC],
+  [_I, _ORIr, _A, _SPNe, _D, _Ta, _AACT, _TRR, _LMT, _LMR, _HRR, _AACHGI, _GACC],
   [0, 0, 0, 0, 0, 128 | 0, 128 | 0, 64 | 0, 4, 0, 64 | 0, 0, () => GranularAccessControlConfiguration$]
 ];
 export var SecurityProfileItem$: StaticStructureSchema = [3, n0, _SPIec,
@@ -7380,7 +7460,7 @@ export var SecurityProfileSearchCriteria$: StaticStructureSchema = [3, n0, _SPSC
 ];
 export var SecurityProfileSearchSummary$: StaticStructureSchema = [3, n0, _SPSS,
   0,
-  [_I, _ORIr, _A, _SPN, _D, _Ta],
+  [_I, _ORIr, _A, _SPNe, _D, _Ta],
   [0, 0, 0, 0, 0, 128 | 0]
 ];
 export var SecurityProfilesSearchFilter$: StaticStructureSchema = [3, n0, _SPSF,
@@ -7423,12 +7503,6 @@ export var SendOutboundEmailResponse$: StaticStructureSchema = [3, n0, _SOERe,
   [],
   []
 ];
-export var ServiceQuotaExceededException$: StaticErrorSchema = [-3, n0, _SQEE,
-  { [_e]: _c, [_hE]: 402 },
-  [_M, _Rea],
-  [0, () => ServiceQuotaExceededExceptionReason$]
-];
-TypeRegistry.for(n0).registerError(ServiceQuotaExceededException$, ServiceQuotaExceededException);
 export var SignInConfig$: StaticStructureSchema = [3, n0, _SIC,
   0,
   [_Di],
@@ -7829,18 +7903,6 @@ export var ThresholdV2$: StaticStructureSchema = [3, n0, _TVhr,
   [_Comp, _TVh],
   [0, 1]
 ];
-export var ThrottlingException$: StaticErrorSchema = [-3, n0, _TE,
-  { [_aQE]: [`ThrottlingException`, 429], [_e]: _c, [_hE]: 429 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ThrottlingException$, ThrottlingException);
-export var TooManyRequestsException$: StaticErrorSchema = [-3, n0, _TMRE,
-  { [_e]: _c, [_hE]: 429 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(TooManyRequestsException$, TooManyRequestsException);
 export var TrafficDistributionGroup$: StaticStructureSchema = [3, n0, _TDG,
   0,
   [_I, _A, _N, _D, _IAns, _St, _Ta, _ID],
@@ -8241,6 +8303,11 @@ export var UpdateTrafficDistributionResponse$: StaticStructureSchema = [3, n0, _
   [],
   []
 ];
+export var UpdateUserConfigRequest$: StaticStructureSchema = [3, n0, _UUCR,
+  0,
+  [_UI, _II, _AACut, _ACWCf, _PNC, _PCC, _VEC],
+  [[0, 1], [0, 1], () => AutoAcceptConfigs, () => AfterContactWorkConfigs, [() => PhoneNumberConfigs, 0], () => PersistentConnectionConfigs, () => VoiceEnhancementConfigs], 2
+];
 export var UpdateUserHierarchyGroupNameRequest$: StaticStructureSchema = [3, n0, _UUHGNR,
   0,
   [_N, _HGI, _II],
@@ -8264,7 +8331,7 @@ export var UpdateUserIdentityInfoRequest$: StaticStructureSchema = [3, n0, _UUII
 export var UpdateUserPhoneConfigRequest$: StaticStructureSchema = [3, n0, _UUPCR,
   0,
   [_PCh, _UI, _II],
-  [() => UserPhoneConfig$, [0, 1], [0, 1]], 3
+  [[() => UserPhoneConfig$, 0], [0, 1], [0, 1]], 3
 ];
 export var UpdateUserProficienciesRequest$: StaticStructureSchema = [3, n0, _UUPR,
   0,
@@ -8313,7 +8380,7 @@ export var UpdateWorkspaceMetadataResponse$: StaticStructureSchema = [3, n0, _UW
 ];
 export var UpdateWorkspacePageRequest$: StaticStructureSchema = [3, n0, _UWPR,
   0,
-  [_II, _WI, _Pa, _NP, _RAe, _Sl, _IDnp],
+  [_II, _WI, _Pag, _NP, _RAe, _Sl, _IDnp],
   [[0, 1], [0, 1], [0, 1], 0, 0, 0, 0], 3
 ];
 export var UpdateWorkspacePageResponse$: StaticStructureSchema = [3, n0, _UWPRp,
@@ -8358,8 +8425,8 @@ export var UseCase$: StaticStructureSchema = [3, n0, _UCs,
 ];
 export var User$: StaticStructureSchema = [3, n0, _Us,
   0,
-  [_I, _A, _U, _IId, _PCh, _DUI, _SPIe, _RPI, _HGI, _Ta, _LMT, _LMR],
-  [0, 0, 0, [() => UserIdentityInfo$, 0], () => UserPhoneConfig$, 0, 64 | 0, 0, 0, 128 | 0, 4, 0]
+  [_I, _A, _U, _IId, _PCh, _DUI, _SPIe, _RPI, _HGI, _Ta, _AACut, _ACWCf, _PNC, _PCC, _VEC, _LMT, _LMR],
+  [0, 0, 0, [() => UserIdentityInfo$, 0], [() => UserPhoneConfig$, 0], 0, 64 | 0, 0, 0, 128 | 0, () => AutoAcceptConfigs, () => AfterContactWorkConfigs, [() => PhoneNumberConfigs, 0], () => PersistentConnectionConfigs, () => VoiceEnhancementConfigs, 4, 0]
 ];
 export var UserData$: StaticStructureSchema = [3, n0, _UD,
   0,
@@ -8396,16 +8463,10 @@ export var UserInfo$: StaticStructureSchema = [3, n0, _UIs,
   [_UI],
   [0]
 ];
-export var UserNotFoundException$: StaticErrorSchema = [-3, n0, _UNFE,
-  { [_e]: _c, [_hE]: 404 },
-  [_M],
-  [0]
-];
-TypeRegistry.for(n0).registerError(UserNotFoundException$, UserNotFoundException);
 export var UserPhoneConfig$: StaticStructureSchema = [3, n0, _UPC,
   0,
-  [_PTh, _AAu, _ACWTL, _DPNe, _PCer],
-  [0, 2, 1, 0, 2], 1
+  [_PTh, _AA, _ACWTL, _DPNe, _PCer],
+  [0, 2, 1, [() => SensitivePhoneNumber, 0], 2]
 ];
 export var UserProficiency$: StaticStructureSchema = [3, n0, _UPs,
   0,
@@ -8439,8 +8500,8 @@ export var UserSearchFilter$: StaticStructureSchema = [3, n0, _USF,
 ];
 export var UserSearchSummary$: StaticStructureSchema = [3, n0, _USS,
   0,
-  [_A, _DUI, _HGI, _I, _IId, _PCh, _RPI, _SPIe, _Ta, _U],
-  [0, 0, 0, 0, [() => UserIdentityInfoLite$, 0], () => UserPhoneConfig$, 0, 64 | 0, 128 | 0, 0]
+  [_A, _DUI, _HGI, _I, _IId, _PCh, _RPI, _SPIe, _Ta, _U, _AACut, _ACWCf, _PNC, _PCC, _VEC],
+  [0, 0, 0, 0, [() => UserIdentityInfoLite$, 0], [() => UserPhoneConfig$, 0], 0, 64 | 0, 128 | 0, 0, () => AutoAcceptConfigs, () => AfterContactWorkConfigs, [() => PhoneNumberConfigs, 0], () => PersistentConnectionConfigs, () => VoiceEnhancementConfigs]
 ];
 export var UserSummary$: StaticStructureSchema = [3, n0, _US,
   0,
@@ -8507,6 +8568,11 @@ export var VoiceCallEntryPointParameters$: StaticStructureSchema = [3, n0, _VCEP
   [_SPNo, _DPN, _FI],
   [0, 0, 0]
 ];
+export var VoiceEnhancementConfig$: StaticStructureSchema = [3, n0, _VECo,
+  0,
+  [_C, _VEM],
+  [0, 0], 2
+];
 export var VoiceRecordingConfiguration$: StaticStructureSchema = [3, n0, _VRC,
   0,
   [_VRT, _IRT],
@@ -8539,7 +8605,7 @@ export var WorkspaceAssociationSearchSummary$: StaticStructureSchema = [3, n0, _
 ];
 export var WorkspacePage$: StaticStructureSchema = [3, n0, _WP,
   0,
-  [_RAe, _Pa, _Sl, _IDnp],
+  [_RAe, _Pag, _Sl, _IDnp],
   [0, 0, 0, 0]
 ];
 export var WorkspaceSearchCriteria$: StaticStructureSchema = [3, n0, _WSC,
@@ -8588,12 +8654,13 @@ export var WorkspaceThemeTypography$: StaticStructureSchema = [3, n0, _WTT,
   [() => FontFamily$]
 ];
 var __Unit = "unit" as const;
-export var ConnectServiceException$: StaticErrorSchema = [-3, _sm, "ConnectServiceException", 0, [], []];
-TypeRegistry.for(_sm).registerError(ConnectServiceException$, ConnectServiceException);
 var ActionSummaries: StaticListSchema = [1, n0, _ASc,
   0, () => ActionSummary$
 ];
 var ActiveRegionList = 64 | 0;
+var AfterContactWorkConfigs: StaticListSchema = [1, n0, _ACWCf,
+  0, () => AfterContactWorkConfigPerChannel$
+];
 var AgentContactReferenceList: StaticListSchema = [1, n0, _ACRL,
   0, () => AgentContactReference$
 ];
@@ -8655,6 +8722,9 @@ var AttributesList: StaticListSchema = [1, n0, _ALt,
 ];
 var AuthenticationProfileSummaryList: StaticListSchema = [1, n0, _APSL,
   0, () => AuthenticationProfileSummary$
+];
+var AutoAcceptConfigs: StaticListSchema = [1, n0, _AACut,
+  0, () => AutoAcceptConfig$
 ];
 var AvailableNumbersList: StaticListSchema = [1, n0, _ANL,
   0, () => AvailableNumberSummary$
@@ -9001,6 +9071,13 @@ var ParticipantTimerConfigList: StaticListSchema = [1, n0, _PTCL,
   0, () => ParticipantTimerConfiguration$
 ];
 var PermissionsList = 64 | 0;
+var PersistentConnectionConfigs: StaticListSchema = [1, n0, _PCC,
+  0, () => PersistentConnectionConfig$
+];
+var PhoneNumberConfigs: StaticListSchema = [1, n0, _PNC,
+  0, [() => PhoneNumberConfig$,
+    0]
+];
 var PhoneNumberCountryCodes = 64 | 0;
 var PhoneNumberSummaryList: StaticListSchema = [1, n0, _PNSL,
   0, () => PhoneNumberSummary$
@@ -9034,7 +9111,7 @@ var PrimaryValuesResponseSet: StaticListSchema = [1, n0, _PVRS,
 var PrimaryValuesSet: StaticListSchema = [1, n0, _PVS,
   0, () => PrimaryValue$
 ];
-var Problems: StaticListSchema = [1, n0, _Prob,
+var Problems: StaticListSchema = [1, n0, _P,
   0, () => ProblemDetail$
 ];
 var PromptList: StaticListSchema = [1, n0, _PLro,
@@ -9321,6 +9398,9 @@ var ViewVersionSummaryList: StaticListSchema = [1, n0, _VVSL,
 var VocabularySummaryList: StaticListSchema = [1, n0, _VSLo,
   0, () => VocabularySummary$
 ];
+var VoiceEnhancementConfigs: StaticListSchema = [1, n0, _VEC,
+  0, () => VoiceEnhancementConfig$
+];
 var WeekdayOccurrenceList = 64 | 1;
 var WorkspaceAssociationSearchConditionList: StaticListSchema = [1, n0, _WASCL,
   0, () => WorkspaceAssociationSearchCriteria$
@@ -9344,7 +9424,7 @@ var WorkspaceSummaryList: StaticListSchema = [1, n0, _WSL,
 var AllowedAccessControlTags = 128 | 0;
 var Attributes = 128 | 0;
 var ChannelToCountMap = 128 | 1;
-var ContactEvaluations: StaticMapSchema = [2, n0, _CEon,
+var ContactEvaluations: StaticMapSchema = [2, n0, _CEo,
   0, 0, () => ContactEvaluation$
 ];
 var ContactReferences: StaticMapSchema = [2, n0, _CR,
@@ -10502,6 +10582,9 @@ export var UpdateTestCase$: StaticOperationSchema = [9, n0, _UTC,
 ];
 export var UpdateTrafficDistribution$: StaticOperationSchema = [9, n0, _UTD,
   { [_h]: ["PUT", "/traffic-distribution/{Id}", 200] }, () => UpdateTrafficDistributionRequest$, () => UpdateTrafficDistributionResponse$
+];
+export var UpdateUserConfig$: StaticOperationSchema = [9, n0, _UUC,
+  { [_h]: ["POST", "/users/{InstanceId}/{UserId}/config", 200] }, () => UpdateUserConfigRequest$, () => __Unit
 ];
 export var UpdateUserHierarchy$: StaticOperationSchema = [9, n0, _UUH,
   { [_h]: ["POST", "/users/{InstanceId}/{UserId}/hierarchy", 200] }, () => UpdateUserHierarchyRequest$, () => __Unit

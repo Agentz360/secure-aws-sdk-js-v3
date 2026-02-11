@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.987.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.986.0...v3.987.0) (2026-02-10)
+
+
+### Features
+
+* **client-bedrock-agentcore:** Added AgentCore browser proxy configuration support, allowing routing of browser traffic through HTTP and HTTPS proxy servers with authentication and bypass rules. ([9bdc1cf](https://github.com/aws/aws-sdk-js-v3/commit/9bdc1cf81adf5a42bc61e98e48c9449c1732428a))
+* **client-connect:** Amazon Connect now supports per-channel auto-accept and After Contact Work (ACW) timeouts. Configure agents with auto-accept and ACW timeout settings for chat, tasks, emails, and callbacks. Use the new UpdateUserConfig API to manage these settings. ([9408c41](https://github.com/aws/aws-sdk-js-v3/commit/9408c4135ba64f680ce5038e8b10bb4c96126087))
+* **client-eks:** Introducing an optional policy field, an IAM policy applied to pod identity associations in addition to IAM role policies. When specified, pod permissions are the intersection of IAM role policies and the policy field, ensuring the principle of least privilege. ([c35168e](https://github.com/aws/aws-sdk-js-v3/commit/c35168e301f2f874ea38c2e85743fff1a6bf4d79))
+* **client-kafka:** Amazon MSK adds three new APIs, CreateTopic, UpdateTopic, and DeleteTopic for managing Kafka topics in your MSK clusters. ([cc06eb6](https://github.com/aws/aws-sdk-js-v3/commit/cc06eb6f4b6f46d8381bfe0372f357f9f398d2e2))
+* **client-rds:** This release adds backup configuration for RDS and Aurora restores, letting customers set backup retention period and preferred backup window during restore. It also enables viewing backup settings when describing snapshots or automated backups for instances and clusters. ([dfcf7f3](https://github.com/aws/aws-sdk-js-v3/commit/dfcf7f3d55be4a863fafd3bf8a66311824590078))
+* **clients:** update client endpoints as of 2026-02-10 ([1bee3fe](https://github.com/aws/aws-sdk-js-v3/commit/1bee3fecd51d26d694f1e85a0f6b53d67ac77f60))
+
+
+
+
+
+# [3.986.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.985.0...v3.986.0) (2026-02-09)
+
+
+### Features
+
+* **client-connectcampaignsv2:** Add the missing event type for WhatsApp ([6b19703](https://github.com/aws/aws-sdk-js-v3/commit/6b19703e15bf13fb26fe5ddbcd8e73d154204e17))
+* **client-ec2:** Amazon Secondary Networks is a networking feature that provides high-performance, low-latency connectivity for specialized workloads. ([0ba27c2](https://github.com/aws/aws-sdk-js-v3/commit/0ba27c28535f80e5156fe5d2f142c8999233674b))
+* **client-eks:** Amazon EKS adds a new DescribeUpdate update type, VendedLogsUpdate, to support an integration between EKS Auto Mode and Amazon CloudWatch Vended Logs. ([85135c4](https://github.com/aws/aws-sdk-js-v3/commit/85135c4a3104b958b11b32547ea0fda0405d0a63))
+* **client-imagebuilder:** EC2 Image Builder now supports wildcard patterns in lifecycle policies with recipes and enhances the experience of tag-scoped policies. ([f015ab6](https://github.com/aws/aws-sdk-js-v3/commit/f015ab63de494b18cc2395af769407d25269280a))
+* **client-neptunedata:** Added edgeOnlyLoad boolean parameter to Neptune bulk load request. When TRUE, files are loaded in order without scanning. When FALSE (default), the loader scans files first, then loads vertex files before edge files automatically. ([012843a](https://github.com/aws/aws-sdk-js-v3/commit/012843ab3d96994b945cb555887ffecfe1b92f3d))
+* **client-pcs:** Introduces RESUMING state for clusters, compute node groups, and queues. ([78ec45d](https://github.com/aws/aws-sdk-js-v3/commit/78ec45d517dcb9a2ea0ee279ec99d7bca6a7db50))
+* **clients:** update client endpoints as of 2026-02-09 ([b81f169](https://github.com/aws/aws-sdk-js-v3/commit/b81f169c19677987668177af06f9f104e2ea4178))
+
+
+
+
+
 # [3.985.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.984.0...v3.985.0) (2026-02-06)
 
 

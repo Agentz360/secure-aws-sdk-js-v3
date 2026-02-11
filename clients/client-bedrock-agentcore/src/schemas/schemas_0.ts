@@ -8,6 +8,7 @@ const _ASu = "AutomationStream";
 const _ATT = "AccessTokenType";
 const _AUT = "AuthorizationUrlType";
 const _B = "Body";
+const _BA = "BasicAuth";
 const _BCMR = "BatchCreateMemoryRecords";
 const _BCMRI = "BatchCreateMemoryRecordsInput";
 const _BCMRO = "BatchCreateMemoryRecordsOutput";
@@ -63,6 +64,7 @@ const _EJMx = "ExtractionJobMessages";
 const _EL = "EventList";
 const _EMFE = "EventMetadataFilterExpression";
 const _EMFL = "EventMetadataFilterList";
+const _EP = "ExternalProxy";
 const _ER = "EvaluateRequest";
 const _ERC = "EvaluationResultContent";
 const _ERv = "EvaluateResponse";
@@ -153,8 +155,13 @@ const _MRUI = "MemoryRecordUpdateInput";
 const _MRUIL = "MemoryRecordsUpdateInputList";
 const _MSI = "Mcp-Session-Id";
 const _MV = "MetadataValue";
+const _P = "Proxies";
+const _PB = "ProxyBypass";
+const _PC = "ProxyConfiguration";
+const _PCr = "ProxyCredentials";
 const _PT = "PayloadType";
 const _PTL = "PayloadTypeList";
+const _Pr = "Proxy";
 const _RC = "ResourceContent";
 const _RCE = "RetryableConflictException";
 const _RCEu = "RuntimeClientError";
@@ -230,10 +237,12 @@ const _aT = "accessToken";
 const _aU = "authorizationUrl";
 const _ar = "arguments";
 const _b = "branch";
+const _bA = "basicAuth";
 const _bI = "browserIdentifier";
 const _ba = "baggage";
 const _bl = "blob";
 const _bu = "bucket";
+const _by = "bypass";
 const _c = "client";
 const _cA = "createdAt";
 const _cC = "clearContext";
@@ -248,8 +257,10 @@ const _cod = "code";
 const _com = "command";
 const _con = "context";
 const _conv = "conversational";
+const _cr = "credentials";
 const _d = "data";
-const _dP = "directoryPath";
+const _dP = "domainPatterns";
+const _dPi = "directoryPath";
 const _de = "description";
 const _e = "error";
 const _eA = "evaluatorArn";
@@ -262,6 +273,7 @@ const _eJ = "extractionJob";
 const _eM = "errorMessage";
 const _eMv = "eventMetadata";
 const _eN = "evaluatorName";
+const _eP = "externalProxy";
 const _eR = "evaluationResults";
 const _eT = "eventTimestamp";
 const _eTv = "evaluationTarget";
@@ -322,12 +334,15 @@ const _oF = "oauth2Flow";
 const _oT = "outputTokens";
 const _p = "payload";
 const _pC = "profileConfiguration";
+const _pCr = "proxyConfiguration";
 const _pI = "profileIdentifier";
 const _pa = "path";
 const _pat = "paths";
-const _pr = "prefix";
+const _po = "port";
+const _pr = "proxies";
+const _pre = "prefix";
 const _q = "qualifier";
-const _r = "records";
+const _r = "reason";
 const _rCPN = "resourceCredentialProviderName";
 const _rEI = "rootEventId";
 const _rI = "requestIdentifier";
@@ -335,13 +350,14 @@ const _rNFE = "resourceNotFoundException";
 const _rORU = "resourceOauth2ReturnUrl";
 const _rSI = "runtimeSessionId";
 const _rUI = "runtimeUserId";
-const _re = "resource";
-const _rea = "reason";
-const _res = "response";
+const _re = "records";
+const _res = "resource";
+const _resp = "response";
 const _resu = "result";
 const _ri = "right";
 const _ro = "role";
-const _s = "sensitive";
+const _s = "smithy.ts.sdk.synthetic.com.amazonaws.bedrockagentcore";
+const _sA = "secretArn";
 const _sC = "structuredContent";
 const _sCe = "searchCriteria";
 const _sCp = "spanContext";
@@ -367,8 +383,8 @@ const _s_ = "s3";
 const _sc = "scopes";
 const _sco = "score";
 const _se = "server";
+const _sen = "sensitive";
 const _si = "size";
-const _sm = "smithy.ts.sdk.synthetic.com.amazonaws.bedrockagentcore";
 const _st = "streaming";
 const _sta = "status";
 const _std = "stdout";
@@ -437,6 +453,103 @@ import {
 } from "../models/errors";
 
 /* eslint no-var: 0 */
+const _s_registry = TypeRegistry.for(_s);
+export var BedrockAgentCoreServiceException$: StaticErrorSchema = [-3, _s, "BedrockAgentCoreServiceException", 0, [], []];
+_s_registry.registerError(BedrockAgentCoreServiceException$, BedrockAgentCoreServiceException);
+const n0_registry = TypeRegistry.for(n0);
+export var AccessDeniedException$: StaticErrorSchema = [-3, n0, _ADE,
+  { [_e]: _c, [_hE]: 403 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(AccessDeniedException$, AccessDeniedException);
+export var ConflictException$: StaticErrorSchema = [-3, n0, _CE,
+  { [_e]: _c, [_hE]: 409 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(ConflictException$, ConflictException);
+export var DuplicateIdException$: StaticErrorSchema = [-3, n0, _DIE,
+  { [_e]: _c, [_hE]: 409 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(DuplicateIdException$, DuplicateIdException);
+export var InternalServerException$: StaticErrorSchema = [-3, n0, _ISE,
+  { [_e]: _se, [_hE]: 500 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(InternalServerException$, InternalServerException);
+export var InvalidInputException$: StaticErrorSchema = [-3, n0, _IIE,
+  { [_e]: _c, [_hE]: 400 },
+  [_m],
+  [0], 1
+];
+n0_registry.registerError(InvalidInputException$, InvalidInputException);
+export var ResourceNotFoundException$: StaticErrorSchema = [-3, n0, _RNFE,
+  { [_e]: _c, [_hE]: 404 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(ResourceNotFoundException$, ResourceNotFoundException);
+export var RetryableConflictException$: StaticErrorSchema = [-3, n0, _RCE,
+  { [_e]: _c, [_hE]: 409 },
+  [_m],
+  [0], 1
+];
+n0_registry.registerError(RetryableConflictException$, RetryableConflictException);
+export var RuntimeClientError$: StaticErrorSchema = [-3, n0, _RCEu,
+  { [_e]: _c, [_hE]: 424 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(RuntimeClientError$, RuntimeClientError);
+export var ServiceException$: StaticErrorSchema = [-3, n0, _SE,
+  { [_e]: _se, [_hE]: 500 },
+  [_m],
+  [0], 1
+];
+n0_registry.registerError(ServiceException$, ServiceException);
+export var ServiceQuotaExceededException$: StaticErrorSchema = [-3, n0, _SQEE,
+  { [_e]: _c, [_hE]: 402 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(ServiceQuotaExceededException$, ServiceQuotaExceededException);
+export var ThrottledException$: StaticErrorSchema = [-3, n0, _TE,
+  { [_e]: _c, [_hE]: 429 },
+  [_m],
+  [0], 1
+];
+n0_registry.registerError(ThrottledException$, ThrottledException);
+export var ThrottlingException$: StaticErrorSchema = [-3, n0, _TEh,
+  { [_e]: _c, [_hE]: 429 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(ThrottlingException$, ThrottlingException);
+export var UnauthorizedException$: StaticErrorSchema = [-3, n0, _UE,
+  { [_e]: _c, [_hE]: 401 },
+  [_m],
+  [0]
+];
+n0_registry.registerError(UnauthorizedException$, UnauthorizedException);
+export var ValidationException$: StaticErrorSchema = [-3, n0, _VE,
+  { [_e]: _c, [_hE]: 400 },
+  [_m, _r, _fL],
+  [0, 0, () => ValidationExceptionFieldList], 2
+];
+n0_registry.registerError(ValidationException$, ValidationException);
+/**
+ * TypeRegistry instances containing modeled errors.
+ * @internal
+ *
+ */
+export const errorTypeRegistries = [
+  _s_registry,
+  n0_registry,
+]
 var AccessTokenType: StaticSimpleSchema = [0, n0, _ATT, 8, 0];
 var ApiKeyType: StaticSimpleSchema = [0, n0, _AKT, 8, 0];
 var AuthorizationUrlType: StaticSimpleSchema = [0, n0, _AUT, 8, 0];
@@ -444,17 +557,11 @@ var Body: StaticSimpleSchema = [0, n0, _B, 8, 21];
 var CustomRequestValueType: StaticSimpleSchema = [0, n0, _CRVT, 8, 0];
 var Document: StaticSimpleSchema = [0, n0, _D, 8, 15];
 var EvaluationExplanation: StaticSimpleSchema = [0, n0, _EE, 8, 0];
-var ResponseStream: StaticSimpleSchema = [0, n0, _RS, { [_s]: 1, [_st]: 1 }, 42];
+var ResponseStream: StaticSimpleSchema = [0, n0, _RS, { [_sen]: 1, [_st]: 1 }, 42];
 var SensitiveString: StaticSimpleSchema = [0, n0, _SS, 8, 0];
 var State: StaticSimpleSchema = [0, n0, _S, 8, 0];
 var UserTokenType: StaticSimpleSchema = [0, n0, _UTT, 8, 0];
 var WorkloadIdentityTokenType: StaticSimpleSchema = [0, n0, _WITT, 8, 0];
-export var AccessDeniedException$: StaticErrorSchema = [-3, n0, _ADE,
-  { [_e]: _c, [_hE]: 403 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(AccessDeniedException$, AccessDeniedException);
 export var ActorSummary$: StaticStructureSchema = [3, n0, _AS,
   0,
   [_aI],
@@ -470,9 +577,14 @@ export var AutomationStreamUpdate$: StaticStructureSchema = [3, n0, _ASU,
   [_sS],
   [0]
 ];
+export var BasicAuth$: StaticStructureSchema = [3, n0, _BA,
+  0,
+  [_sA],
+  [0], 1
+];
 export var BatchCreateMemoryRecordsInput$: StaticStructureSchema = [3, n0, _BCMRI,
   0,
-  [_mI, _r, _cT],
+  [_mI, _re, _cT],
   [[0, 1], [() => MemoryRecordsCreateInputList, 0], [0, 4]], 2
 ];
 export var BatchCreateMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _BCMRO,
@@ -482,7 +594,7 @@ export var BatchCreateMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _BCM
 ];
 export var BatchDeleteMemoryRecordsInput$: StaticStructureSchema = [3, n0, _BDMRI,
   0,
-  [_mI, _r],
+  [_mI, _re],
   [[0, 1], () => MemoryRecordsDeleteInputList], 2
 ];
 export var BatchDeleteMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _BDMRO,
@@ -492,7 +604,7 @@ export var BatchDeleteMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _BDM
 ];
 export var BatchUpdateMemoryRecordsInput$: StaticStructureSchema = [3, n0, _BUMRI,
   0,
-  [_mI, _r],
+  [_mI, _re],
   [[0, 1], [() => MemoryRecordsUpdateInputList, 0]], 2
 ];
 export var BatchUpdateMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _BUMRO,
@@ -550,15 +662,9 @@ export var CompleteResourceTokenAuthResponse$: StaticStructureSchema = [3, n0, _
   [],
   []
 ];
-export var ConflictException$: StaticErrorSchema = [-3, n0, _CE,
-  { [_e]: _c, [_hE]: 409 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ConflictException$, ConflictException);
 export var ContentBlock$: StaticStructureSchema = [3, n0, _CB,
   0,
-  [_t, _te, _d, _mT, _u, _n, _de, _si, _re],
+  [_t, _te, _d, _mT, _u, _n, _de, _si, _res],
   [0, 0, 21, 0, 0, 0, 0, 1, () => ResourceContent$], 1
 ];
 export var Conversational$: StaticStructureSchema = [3, n0, _C,
@@ -596,12 +702,6 @@ export var DeleteMemoryRecordOutput$: StaticStructureSchema = [3, n0, _DMRO,
   [_mRI],
   [0], 1
 ];
-export var DuplicateIdException$: StaticErrorSchema = [-3, n0, _DIE,
-  { [_e]: _c, [_hE]: 409 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(DuplicateIdException$, DuplicateIdException);
 export var EvaluateRequest$: StaticStructureSchema = [3, n0, _ER,
   0,
   [_eIv, _eIva, _eTv],
@@ -626,6 +726,11 @@ export var EventMetadataFilterExpression$: StaticStructureSchema = [3, n0, _EMFE
   0,
   [_le, _o, _ri],
   [() => LeftExpression$, 0, () => RightExpression$], 2
+];
+export var ExternalProxy$: StaticStructureSchema = [3, n0, _EP,
+  0,
+  [_se, _po, _dP, _cr],
+  [0, 1, 64 | 0, () => ProxyCredentials$], 2
 ];
 export var ExtractionJob$: StaticStructureSchema = [3, n0, _EJ,
   0,
@@ -664,8 +769,8 @@ export var GetBrowserSessionRequest$: StaticStructureSchema = [3, n0, _GBSR,
 ];
 export var GetBrowserSessionResponse$: StaticStructureSchema = [3, n0, _GBSRe,
   0,
-  [_bI, _sI, _cA, _n, _vP, _ext, _pC, _sTS, _sta, _str, _sRA, _lUA],
-  [0, 0, 5, 0, () => ViewPort$, () => BrowserExtensions, () => BrowserProfileConfiguration$, 1, 0, () => BrowserSessionStream$, 0, 5], 3
+  [_bI, _sI, _cA, _n, _vP, _ext, _pC, _sTS, _sta, _str, _pCr, _sRA, _lUA],
+  [0, 0, 5, 0, () => ViewPort$, () => BrowserExtensions, () => BrowserProfileConfiguration$, 1, 0, () => BrowserSessionStream$, () => ProxyConfiguration$, 0, 5], 3
 ];
 export var GetCodeInterpreterSessionRequest$: StaticStructureSchema = [3, n0, _GCISR,
   0,
@@ -752,18 +857,6 @@ export var InputContentBlock$: StaticStructureSchema = [3, n0, _ICB,
   [_pa, _te, _bl],
   [0, 0, [() => Body, 0]], 1
 ];
-export var InternalServerException$: StaticErrorSchema = [-3, n0, _ISE,
-  { [_e]: _se, [_hE]: 500 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(InternalServerException$, InternalServerException);
-export var InvalidInputException$: StaticErrorSchema = [-3, n0, _IIE,
-  { [_e]: _c, [_hE]: 400 },
-  [_m],
-  [0], 1
-];
-TypeRegistry.for(n0).registerError(InvalidInputException$, InvalidInputException);
 export var InvokeAgentRuntimeRequest$: StaticStructureSchema = [3, n0, _IARR,
   0,
   [_aRA, _p, _cTo, _a, _mSI, _rSI, _mPV, _rUI, _tI, _tP, _tS, _ba, _q, _aIc],
@@ -771,7 +864,7 @@ export var InvokeAgentRuntimeRequest$: StaticStructureSchema = [3, n0, _IARR,
 ];
 export var InvokeAgentRuntimeResponse$: StaticStructureSchema = [3, n0, _IARRn,
   0,
-  [_cTo, _rSI, _mSI, _mPV, _tI, _tP, _tS, _ba, _res, _sCt],
+  [_cTo, _rSI, _mSI, _mPV, _tI, _tP, _tS, _ba, _resp, _sCt],
   [[0, { [_hH]: _CT }], [0, { [_hH]: _XABARSI }], [0, { [_hH]: _MSI }], [0, { [_hH]: _MPV }], [0, { [_hH]: _XATI }], [0, { [_hH]: _tr }], [0, { [_hH]: _tra }], [0, { [_hH]: _ba }], [() => ResponseStream, 16], [1, 32]], 1
 ];
 export var InvokeCodeInterpreterRequest$: StaticStructureSchema = [3, n0, _ICIR,
@@ -899,17 +992,21 @@ export var MessageMetadata$: StaticStructureSchema = [3, n0, _MM,
   [_eI, _mIe],
   [0, 1], 2
 ];
+export var ProxyBypass$: StaticStructureSchema = [3, n0, _PB,
+  0,
+  [_dP],
+  [64 | 0]
+];
+export var ProxyConfiguration$: StaticStructureSchema = [3, n0, _PC,
+  0,
+  [_pr, _by],
+  [() => Proxies, () => ProxyBypass$], 1
+];
 export var ResourceContent$: StaticStructureSchema = [3, n0, _RC,
   0,
   [_t, _u, _mT, _te, _bl],
   [0, 0, 0, 0, 21], 1
 ];
-export var ResourceNotFoundException$: StaticErrorSchema = [-3, n0, _RNFE,
-  { [_e]: _c, [_hE]: 404 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ResourceNotFoundException$, ResourceNotFoundException);
 export var RetrieveMemoryRecordsInput$: StaticStructureSchema = [3, n0, _RMRI,
   0,
   [_mI, _na, _sCe, _nT, _mRa],
@@ -920,21 +1017,9 @@ export var RetrieveMemoryRecordsOutput$: StaticStructureSchema = [3, n0, _RMRO,
   [_mRS, _nT],
   [[() => MemoryRecordSummaryList, 0], 0], 1
 ];
-export var RetryableConflictException$: StaticErrorSchema = [-3, n0, _RCE,
-  { [_e]: _c, [_hE]: 409 },
-  [_m],
-  [0], 1
-];
-TypeRegistry.for(n0).registerError(RetryableConflictException$, RetryableConflictException);
-export var RuntimeClientError$: StaticErrorSchema = [-3, n0, _RCEu,
-  { [_e]: _c, [_hE]: 424 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(RuntimeClientError$, RuntimeClientError);
 export var S3Location$: StaticStructureSchema = [3, n0, _SL,
   0,
-  [_bu, _pr, _vI],
+  [_bu, _pre, _vI],
   [0, 0, 0], 2
 ];
 export var SaveBrowserSessionProfileRequest$: StaticStructureSchema = [3, n0, _SBSPR,
@@ -952,18 +1037,6 @@ export var SearchCriteria$: StaticStructureSchema = [3, n0, _SC,
   [_sQ, _mSIe, _tK, _mF],
   [[() => SensitiveString, 0], 0, 1, () => MemoryMetadataFilterList], 1
 ];
-export var ServiceException$: StaticErrorSchema = [-3, n0, _SE,
-  { [_e]: _se, [_hE]: 500 },
-  [_m],
-  [0], 1
-];
-TypeRegistry.for(n0).registerError(ServiceException$, ServiceException);
-export var ServiceQuotaExceededException$: StaticErrorSchema = [-3, n0, _SQEE,
-  { [_e]: _c, [_hE]: 402 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ServiceQuotaExceededException$, ServiceQuotaExceededException);
 export var SessionSummary$: StaticStructureSchema = [3, n0, _SSe,
   0,
   [_sI, _aI, _cA],
@@ -976,8 +1049,8 @@ export var SpanContext$: StaticStructureSchema = [3, n0, _SCp,
 ];
 export var StartBrowserSessionRequest$: StaticStructureSchema = [3, n0, _SBSR,
   0,
-  [_bI, _tI, _tP, _n, _sTS, _vP, _ext, _pC, _cT],
-  [[0, 1], [0, { [_hH]: _XATI }], [0, { [_hH]: _tr }], 0, 1, () => ViewPort$, () => BrowserExtensions, () => BrowserProfileConfiguration$, [0, 4]], 1
+  [_bI, _tI, _tP, _n, _sTS, _vP, _ext, _pC, _pCr, _cT],
+  [[0, 1], [0, { [_hH]: _XATI }], [0, { [_hH]: _tr }], 0, 1, () => ViewPort$, () => BrowserExtensions, () => BrowserProfileConfiguration$, () => ProxyConfiguration$, [0, 4]], 1
 ];
 export var StartBrowserSessionResponse$: StaticStructureSchema = [3, n0, _SBSRt,
   0,
@@ -1034,18 +1107,6 @@ export var StopRuntimeSessionResponse$: StaticStructureSchema = [3, n0, _SRSRt,
   [_rSI, _sCt],
   [[0, { [_hH]: _XABARSI }], [1, 32]]
 ];
-export var ThrottledException$: StaticErrorSchema = [-3, n0, _TE,
-  { [_e]: _c, [_hE]: 429 },
-  [_m],
-  [0], 1
-];
-TypeRegistry.for(n0).registerError(ThrottledException$, ThrottledException);
-export var ThrottlingException$: StaticErrorSchema = [-3, n0, _TEh,
-  { [_e]: _c, [_hE]: 429 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(ThrottlingException$, ThrottlingException);
 export var TokenUsage$: StaticStructureSchema = [3, n0, _TU,
   0,
   [_iTn, _oT, _tT],
@@ -1053,7 +1114,7 @@ export var TokenUsage$: StaticStructureSchema = [3, n0, _TU,
 ];
 export var ToolArguments$: StaticStructureSchema = [3, n0, _TA,
   0,
-  [_cod, _lan, _cC, _com, _pa, _pat, _co, _dP, _tIa],
+  [_cod, _lan, _cC, _com, _pa, _pat, _co, _dPi, _tIa],
   [0, 0, 2, 0, 0, 64 | 0, [() => InputContentBlockList, 0], 0, 0]
 ];
 export var ToolResultStructuredContent$: StaticStructureSchema = [3, n0, _TRSC,
@@ -1061,12 +1122,6 @@ export var ToolResultStructuredContent$: StaticStructureSchema = [3, n0, _TRSC,
   [_tIa, _tSa, _std, _stde, _eCx, _eTx],
   [0, 0, 0, 0, 1, 1]
 ];
-export var UnauthorizedException$: StaticErrorSchema = [-3, n0, _UE,
-  { [_e]: _c, [_hE]: 401 },
-  [_m],
-  [0]
-];
-TypeRegistry.for(n0).registerError(UnauthorizedException$, UnauthorizedException);
 export var UpdateBrowserStreamRequest$: StaticStructureSchema = [3, n0, _UBSR,
   0,
   [_bI, _sI, _sUt, _cT],
@@ -1077,12 +1132,6 @@ export var UpdateBrowserStreamResponse$: StaticStructureSchema = [3, n0, _UBSRp,
   [_bI, _sI, _str, _uA],
   [0, 0, () => BrowserSessionStream$, 5], 4
 ];
-export var ValidationException$: StaticErrorSchema = [-3, n0, _VE,
-  { [_e]: _c, [_hE]: 400 },
-  [_m, _rea, _fL],
-  [0, 0, () => ValidationExceptionFieldList], 2
-];
-TypeRegistry.for(n0).registerError(ValidationException$, ValidationException);
 export var ValidationExceptionField$: StaticStructureSchema = [3, n0, _VEF,
   0,
   [_n, _m],
@@ -1093,8 +1142,6 @@ export var ViewPort$: StaticStructureSchema = [3, n0, _VP,
   [_w, _h],
   [1, 1], 2
 ];
-export var BedrockAgentCoreServiceException$: StaticErrorSchema = [-3, _sm, "BedrockAgentCoreServiceException", 0, [], []];
-TypeRegistry.for(_sm).registerError(BedrockAgentCoreServiceException$, BedrockAgentCoreServiceException);
 var ActorSummaryList: StaticListSchema = [1, n0, _ASL,
   0, () => ActorSummary$
 ];
@@ -1110,6 +1157,7 @@ var CodeInterpreterSessionSummaries: StaticListSchema = [1, n0, _CISSo,
 var ContentBlockList: StaticListSchema = [1, n0, _CBL,
   0, () => ContentBlock$
 ];
+var DomainPatterns = 64 | 0;
 var EvaluationResults: StaticListSchema = [1, n0, _ERva,
   0, [() => EvaluationResultContent$,
     0]
@@ -1156,6 +1204,9 @@ var NamespacesList = 64 | 0;
 var PayloadTypeList: StaticListSchema = [1, n0, _PTL,
   0, [() => PayloadType$,
     0]
+];
+var Proxies: StaticListSchema = [1, n0, _P,
+  0, () => Proxy$
 ];
 var ScopesListType = 64 | 0;
 var SessionSummaryList: StaticListSchema = [1, n0, _SSL,
@@ -1228,6 +1279,16 @@ export var PayloadType$: StaticUnionSchema = [4, n0, _PT,
   0,
   [_conv, _bl],
   [[() => Conversational$, 0], [() => Document, 0]]
+];
+export var Proxy$: StaticUnionSchema = [4, n0, _Pr,
+  0,
+  [_eP],
+  [() => ExternalProxy$]
+];
+export var ProxyCredentials$: StaticUnionSchema = [4, n0, _PCr,
+  0,
+  [_bA],
+  [() => BasicAuth$]
 ];
 export var ResourceLocation$: StaticUnionSchema = [4, n0, _RL,
   0,
