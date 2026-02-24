@@ -53,6 +53,7 @@ test-schema: bundles
 test-integration: bundles
 	rm -rf ./clients/client-sso/node_modules/\@smithy # todo(yarn) incompatible redundant nesting.
 	node ./scripts/validation/no-generic-byte-arrays.js
+	node ./scripts/compilation/Inliner.spec.js
 	yarn g:vitest run -c vitest.config.integ.mts
 	make test-protocols
 	make test-types
@@ -75,7 +76,7 @@ build-s3-browser-bundle:
 	node ./clients/client-s3/test/browser-build/esbuild
 
 build-signature-v4-multi-region-browser-bundle:
-	node ./packages/signature-v4-multi-region/test-browser/browser-build/esbuild.js
+	node ./packages-internal/signature-v4-multi-region/test-browser/browser-build/esbuild.js
 
 # removes nested node_modules folders
 clean-nested:

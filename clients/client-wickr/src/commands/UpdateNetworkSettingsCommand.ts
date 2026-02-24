@@ -44,6 +44,7 @@ export interface UpdateNetworkSettingsCommandOutput extends UpdateNetworkSetting
  *       status: "DISABLED" || "ENABLED" || "FORCE_ENABLED",
  *     },
  *     dataRetention: true || false,
+ *     enableTrustedDataFormat: true || false,
  *   },
  * };
  * const command = new UpdateNetworkSettingsCommand(input);
